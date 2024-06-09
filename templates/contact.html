@@ -1,0 +1,35 @@
+{% extends "Base.html" %}
+{% block title %}CONTAT US{% endblock title%}
+{% block body %} 
+<div  class="container">
+    <h1 class="text-center">Contact Us</h1><br/>
+    <img src="https://cdn.pixabay.com/photo/2016/12/15/12/24/contact-us-1908762_1280.png" height="400px" weidth="600px">
+    <form class="row g-3" method="POST" action="/contact">
+      {% csrf_token %}
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Name</label>
+          <input type="text" class="form-control" name="name" id="inputAddress" >
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Phone no</label>
+          <input type="text" class="form-control" name="Phone" id="inputAddress2" >
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Suggetion</label>
+          <input type="text" class="form-control"  name="Suggetion" id="inputCity">
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+</div>
+
+{% endblock body %} 

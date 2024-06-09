@@ -1,0 +1,155 @@
+{% extends "Base.html" %} {% block title %}HOME{% endblock title%} 
+{% block body %}
+
+<div class="container-fluid my-1 px-0">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/08/03/14/38/ice-cream-2576622_640.jpg"
+          height="400px"
+          weidth="400px"
+          class="d-block w-100"
+          alt="img"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>"Happiness is a scoop of ice cream on a sunny day."</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://cdn.pixabay.com/photo/2019/11/07/13/05/waffle-4608843_640.jpg"
+          height="400px"
+          weidth="400px"
+          class="d-block w-100"
+          alt="img"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>"A balanced diet is an ice cream in each hand."</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://cdn.pixabay.com/photo/2021/01/18/12/49/ice-cream-5928043_640.jpg"
+          height="400px"
+          weidth="400px"
+          class="d-block w-100"
+          alt="img"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 color="violetbule">
+            "You can't buy happiness, but you can buy ice cream, and that's kind
+            of the same thing."
+          </h5>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div class="container my-3">
+  <h1 class="text-center my-4">SELECT FROM OUR RANGE OF ICE-CREAM</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img
+          src="https://cdn.pixabay.com/photo/2022/02/11/14/52/waffles-7007465_640.jpg"
+            >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" />
+            
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">
+              In the hustle and bustle of life, ice cream serves as
+              a gentle reminder to savor the simple pleasures and 
+               embrace moments of joy.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img
+          src="https://cdn.pixabay.com/photo/2019/11/23/20/04/coffee-4648041_640.jpg"
+            >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" />
+          </svg>
+          <div class="card-body">
+            <p class="card-text">
+              Laughter echoes louder,conversations flow easier,
+               and bonds strengthen over the shared delight of a 
+               frozen dessert.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img
+          src="https://cdn.pixabay.com/photo/2024/04/08/15/34/food-photography-8683786_640.jpg"
+            >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" />
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+          </svg>
+          <div class="card-body">
+            <p class="card-text">
+              There's something inherently comforting about the velvety smoothness of ice cream. It's like a
+               warm hug on a bad day for the soul.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+
+{% endblock body %}
+  
